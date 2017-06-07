@@ -92,3 +92,5 @@ ENV/
 
 .gitignore
 .idea/
+
+db.sqlite3
