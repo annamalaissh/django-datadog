@@ -37,9 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'ddtrace.contrib.django',
 ]
 
 MIDDLEWARE = [
+    'ddtrace.contrib.django.TraceMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -119,3 +121,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+
+DATADOG_TRACE = {
+    'DEFAULT_SERVICE': 'my-django-app',
+    'TAGS': {'env': 'production'},
+}
