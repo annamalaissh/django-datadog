@@ -126,4 +126,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 DATADOG_TRACE = {
     'DEFAULT_SERVICE': 'my-django-app',
     'TAGS': {'env': 'production'},
+    'ENABLED': True
 }
