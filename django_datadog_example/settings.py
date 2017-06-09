@@ -25,7 +25,7 @@ SECRET_KEY = '$5*u=+^iuyg6zld@($e*y!5gbeb+t-t-06za*h5s)g-s6a9^%4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['165.227.129.192']
+ALLOWED_HOSTS = ['165.227.129.192', 'localhost']
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'ddtrace.contrib.django',
+    'homepage',
 ]
 
 MIDDLEWARE = [
