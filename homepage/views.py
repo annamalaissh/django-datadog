@@ -6,5 +6,5 @@ from django.http import HttpResponse
 
 
 def index_page(request, *args, **kwargs):
-    response = HttpResponse(content='ALL OK')
+    response = HttpResponse(content='NOW IT IS ALL OK')
     return response
